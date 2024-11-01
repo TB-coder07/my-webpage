@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Ms+Madi&family=Petit+Formal+Script&family=Playfair+Display:ital@0;1&display=swap"   rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("Background.jpg");
+            background-size: 100% auto; 
+            background-repeat: no-repeat; 
+            background-position: top center; 
+            height: 100vh; 
+            width: 100%; 
+            overflow-x: hidden;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+
+        .lowerbg{
+            position: absolute;
+            top: 1500px; 
+            left: 10%;
+            transform: translateX(-50%);
+            z-index: -1; 
+            width: 300%;
+            height:700px;
+        }
+
+        
+        .redpattern{
+           position:absolute;
+           top:1550px;
+           left:-1%;
+           z-index:-1;
+           width:330px;
+           opacity: 0.35;
+        }
+
+
+        .indianfood{
+           position:absolute;
+           top:1580px;
+           left:8%;
+           z-index:-1;
+           width:400px;
+        }         
+           
+         .indianfoodtxt {
+            position: absolute;
+            top: 1580px; 
+            left: 40%;
+            font-family: DM Serif Text; 
+            font-size: 80px; 
+            color: white; 
+            font-weight: 100;
+            z-index: 2;
+        }
+
+         .indianfoodtxt2 {
+            position: absolute;
+            top: 1700px; 
+            left: 45%;
+            font-family: 'Ms Madi', cursive; 
+            font-size: 40px; 
+            color: white; 
+            font-weight: 100;
+            z-index: 2;
+        }
+
+         .indianfoodtxt3 {
+            position: absolute;
+            top: 1760px; 
+            left: 40%;
+            font-family: calibri; 
+            font-size: 20px; 
+            color: white;
+            width: 35%; 
+            font-weight: 100;
+            z-index: 2;
+            text-align:center;
+        }
+
+         .aboutus {
+            color: #8B0000; 
+            position: absolute;
+            top: 1000px; 
+            font-family: DM Serif Text;
+            font-size: 60px;
+            margin-top: -30px;
+            text-align: 80px;
+            left: 17%;
+            font-weight: 100; 
+        }
+
+
+         .history-text {
+            position: absolute;
+            top: 1030px; 
+            left: 20%;
+            width: 20%;
+            font-family: calibri; 
+            font-size: 20px; 
+            color: black; 
+            font-weight: 100;
+        }
+
+         .cocktails {
+            position: absolute;
+            top: 990px; 
+            left: 74.5%;
+            width: 20%;
+            font-family: DM Serif Text; 
+            font-size: 50px; 
+            color: white; 
+            font-weight: 100;
+            z-index: 2;
+        }
+
+        .seemocktails::before {
+          content: '\2192'; 
+          margin-right: 10px; 
+          font-size: 30px; 
+          color: #FFBF19;
+        }
+
+         .mocktails {
+           position:absolute;
+           top: 955px;
+           left: 49.1%;
+           width: 20%;
+           font-family: DM Serif Text;
+           font-size: 50px;
+           color: white;
+           font-weight:100;
+           z-index:2;
+        } 
+       
+         .seecocktails::before {
+           content: '\2192'; 
+           margin-right: 10px; 
+           font-size: 30px; 
+           color: #FFBF19; 
+        }
+       
+         .seecocktails {
+            position: absolute;
+            top: 1280px; 
+            left: 74%;
+            width: 20%;
+            font-family: DM Serif Text; 
+            font-size: 30px; 
+            color: #FFBF19; 
+            font-weight: 100;
+            z-index: 2;
+        }   
+
+         .seecocktails::after {
+            content: '';
+            display: block;
+            width: 0px; 
+            height: 2px; 
+            background-color: white; 
+            transition: width 0.5s ease; 
+            position: absolute;
+            left: 0;
+            bottom: -5px; 
+        }
+
+        .seecocktails:hover::after {
+            width: 71%; 
+        }
+
+
+         .seemocktails {
+            position: absolute;
+            top: 1280px; 
+            left: 49%;
+            width: 20%;
+            font-family: DM Serif Text; 
+            font-size: 30px; 
+            color: #FFBF19; 
+            font-weight: 100;
+            z-index: 2;
+        }  
+
+         .seemocktails::after {
+            content: '';
+            display: block;
+            width: 0px; 
+            height: 2px; 
+            background-color: white; 
+            transition: width 0.5s ease; 
+            position: absolute;
+            left: 0;
+            bottom: -4px; 
+        }
+
+        .seemocktails:hover::after {
+            width: 71%; 
+        }         
+
+         .cocktailsinfo {
+            position: absolute;
+            top: 1150px; 
+            left: 71.5%;
+            width: 20%;
+            font-family: calibri; 
+            font-size: 15px; 
+            color: white; 
+            font-weight: 100;
+            z-index: 2;
+            text-align: center;
+        } 
+
+         .mocktailsinfo {
+            position: absolute;
+            top: 1150px; 
+            left: 46%;
+            width: 20%;
+            font-family: calibri; 
+            font-size: 15px; 
+            color: white; 
+            font-weight: 100;
+            z-index: 2;
+            text-align: center;
+        }
+
+      
+         h1 {
+            color: white; 
+            text-align: center; 
+            font-family: 'Times New Roman', serif;
+            font-size: 60px; 
+        }
+
+        h2 {
+            color: #FFBF19; 
+            text-align: center; 
+            font-family: 'Ms Madi', cursive;
+            font-size: 80px;
+            margin-top: -65px;
+        }
+
+        .logo {
+            position: absolute; 
+            top: 250px; 
+            left: 44%; 
+            max-width: 210px; 
+        }
+
+        .logobg {
+            position: absolute;
+            top: 20px;
+            left: 6%;
+            max-width: 300px;
+        }
+
+        .pattern {
+            position: absolute;
+            top: 875px; 
+            left: 9%;
+            transform: translateX(-50%);
+            z-index: -10; 
+            width: 370px;
+            opacity: 0.6;       
+        }
+
+          .pattern2 {
+            position: absolute;
+            top: 875px; 
+            right: -10%;
+            transform: translateX(-50%);
+            z-index: -10; 
+            width: 370px;
+            opacity: 0.6;       
+        }
+
+          .cocktailsimg {
+            position: absolute;
+            top: 1000px;
+            right: 23%; 
+            transform: translateX(-50%);
+            z-index: 0;
+            width: 400px;
+            border-radius: 35px;
+        }
+
+          .cocktailsimg2 {
+            position: absolute;
+            top: 1000px;
+            right: -2%; 
+            transform: translateX(-50%);
+            z-index: 0;
+            width: 400px;
+            border-radius: 35px;
+          } 
+
+          .overlay {
+            position: absolute;
+            top: 1000px;         
+            right: 8.5%;          
+            width: 400px; 
+            height: 396px;               
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1; /* Set to 1 to be above the image */
+            border-radius: 35px; /* Round corners of overlay */
+          }
+
+         .overlay2 {
+           position: absolute;
+           top: 1000px;         
+           right: 33.5%;          
+           width: 400px; 
+           height: 397px;               
+           background-color: rgba(0, 0, 0, 0.5); 
+           z-index: 1; /* Set to 1 to be above the image */
+           border-radius: 35px; /* Round corners of overlay */
+          }
+
+
+         .nav {
+            position: absolute;
+            top: 38px; 
+            right: 500px; 
+        }
+
+        .nav a {
+            color: #A84728; 
+            text-decoration: none; 
+            margin-left: 100px;
+            font-size: 12px;
+            font-family: Tahoma, sans-serif;  
+            position: relative; 
+        }
+
+        .nav a::after {
+            content: '';
+            display: block;
+            width: 0; 
+            height: 2px; 
+            background-color: #A84728; 
+            transition: width 0.5s ease; 
+            position: absolute;
+            left: 0;
+            bottom: -5px; 
+        }
+
+        .nav a:hover::after {
+            width: 100%; 
+        }
+
+        .banner {
+            background-color: #FFFFFF;
+            padding: 50px;                 
+            width: 100%;  
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+        }
+
+        p {
+            position: absolute; 
+            top: 0; 
+            right: 305px; 
+            border: 2px solid #A84728; 
+            padding: 5px; 
+            margin: 32px;
+            font-family: Tahoma, sans-serif;
+            background-color: white; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+            color: #A84728; 
+            font-size: 14px; 
+        }
+
+        p:hover {
+            background-color: #d0d0d0; 
+        }
+
+        .order-button {
+            position: absolute; 
+            top: 0; 
+            right: 155px; 
+            border: 2px solid #A84728; 
+            padding: 5px; 
+            margin: 32px;
+            font-family: Tahoma, sans-serif;
+            background-color: white; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+            color: #A84728; 
+            font-size: 14px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logobg.png" alt="Small logo" class="logobg">
+    <img src="pattern.jpg" alt="Pattern" class="pattern">
+    <img src="pattern2.jpg" alt="Pattern" class="pattern2">
+    <img src="lowerbg.png" class="lowerbg">
+    <img src="cocktailsimg.jpg" class="cocktailsimg">
+    <img src="cocktailsimg2.jpg" class="cocktailsimg2">
+    <img src="redpattern.png" class=redpattern>
+    <img src="indianfood.jpg" class=indianfood>
+
+    <div class="overlay"></div>
+    <div class="overlay2"></div>
+
+    <div class="nav">
+        <a href="#">ABOUT US</a>
+        <a href="#">MENU</a>
+        <a href="#">GALLERY</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">OUR SERVICES</a>
+        <a href="#">CATERING</a>
+        <a href="#">REGISTER</a>
+        <a href="#">EVENTS</a>
+    </div>
+    <h1>Bringing the heat and heart of Indian Cuisine</h1>
+    <h2>to your plate</h2>
+    <h3 class="aboutus">Our History</h3>
+    <h4 class="history-text">At Flavours of Tandoor, our philosophy revolves around the fusion of tradition and innovation. We deeply respect the time-honoured traditions of Indian cuisine, while embracing the excitement of modern flavours.
+
+Our commitment to quality ingredients, inclusive hospitality, and a warm, welcoming atmosphere forms the foundation of our culinary journey.
+
+We see our restaurant as a place where people come together, share meals, and create lasting connections, and we aim to offer our guests a memorable culinary adventure that reflects the diverse and vibrant essence of India.</h4>
+
+    <h5 class="cocktails">COCKTAILS</h5>
+    <h6 class= "mocktails"> MOCKTAILS</h6>
+    <h7 class="seecocktails">See Our Cocktails</h7>
+    <h8 class="seemocktails">See Our Mocktails</h8>
+    <h9 class="cocktailsinfo">Our cocktails are crafted with traditional Indian spices and modern mixology, creating bold, flavorful drinks that elevate your dining experience. </h9>
+    <h10 class="mocktailsinfo">Our mocktails blend fresh fruits and herbs to offer vibrant, non-alcoholic drinks that perfectly complement our Indian cuisine.</h10>
+<h11 class=indianfoodtxt>Dine in today</h11>
+<h12 class=indianfoodtxt2>Enjoy 20% off weekdays and takeaways!</h12>
+<h13 class=indianfoodtxt3>We are offering 20% off all food for Weekday Bookings and Takeaways. Simply dine with us in either of our Indian restaurants, Monday to Friday, between 12 – 6PM to save on your bill!* Or order online for collection and save 20% off your bill with code TANDOORI20.
+
+*Note: Bookings must be made before 5PM on weekdays to be
+applicable for the offer</h13>
+
+    <p>BOOK A TABLE</p>
+    <p class="order-button">ORDER NOW</p>
+
+
+</body>
+</html>
